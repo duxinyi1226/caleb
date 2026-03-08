@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Caleb Introduce</title>
+
+<style>
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    margin:0;
+    background:#ddd2bd;
+    font-family:"標楷體",serif;
+}
+
+.menu{
+    position:absolute;   
+    top:20px;
+    right:20px;
+    z-index:10;          
+}
+
+.menu-btn{
+    background:#fbfafa;
+    color:rgb(7, 7, 7);
+    padding:25px 35px;
+    cursor:pointer;
+    border-radius:40px;
+}
+.menu-btn img{
+    width:60px;
+}
+.dropdown{
+    display:none;
+    background:white;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.dropdown a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:black;
+}
+
+.dropdown a:hover{
+    background:#eee;
+}
+
+.menu:hover .dropdown{
+    display:block;
+}
+
+
+.hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:100px;
+    padding:100px 80px;
+
+    background-image:url("https://i.pinimg.com/originals/8f/d5/1b/8fd51bc03b4694606632afe729a1f7ad.gif");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    position:relative;
+    height:100vh;
+}
+
+.hero-title{
+    text-align:center;
+}
+
+.hero-title h1{
+    font-size:60px;           
+    color:rgb(190, 190, 190);
+    font-family:"標楷體", serif;   
+}
+
+.card{
+    width:1000px;
+    height:1000px;
+    border-radius:40px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(0,0,0,0.2);
+    transition:transform 0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.character{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:100px;
+    padding:100px;
+}
+
+.text-area{
+    max-width:500px;
+}
+
+.quote{
+    font-size:40px;
+    margin-bottom:40px;
+    line-height:1.2;
+    letter-spacing:4px;
+}
+
+.info{
+    font-size:25px;
+    line-height:1.8;
+}
+
+
+
+.section-title{
+    text-align:center;
+    font-size:36px;
+    margin-top:100px;
+}
+
+.card-table{
+    margin:auto;
+    border-spacing:40px;
+}
+
+.card-table img{
+    width:220px;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card-table img:hover{
+    transform:scale(1.05);
+}
+
+.card-table p{
+    text-align:center;
+    margin-top:10px;
+    font-size:18px;
+}
+
+
+#speak{
+    text-align:center;
+    font-size:42px;
+    margin-top:120px;
+    letter-spacing:4px;
+}
+
+
+form{
+    width:380px;
+    margin:80px auto;
+    padding:40px;
+    background:white;
+    border-radius:20px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+form label{
+    font-size:20px;
+    font-weight:bold;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+    margin-top:10px;
+    margin-bottom:20px;
+    font-family:"標楷體";
+    font-size:18px;
+}
+
+form textarea{
+    resize:none;
+}
+
+form input:focus,
+form textarea:focus{
+    outline:none;
+    border:1px solid #e6c86e;
+    box-shadow:0 0 8px rgba(230,200,110,0.6);
+}
+
+form input[type="submit"]{
+    background:#f5dd8f;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    padding:14px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+form input[type="submit"]:hover{
+    background:#e6c86e;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="menu">
+  <div class="menu-btn">
+        <img src="https://i.pinimg.com/736x/80/6c/6f/806c6fc7a752b28d99eba8be268fdfb5.jpg">
+    </div>
+    <div class="dropdown">
+        <a href="#story">角色介紹</a>
+        <a href="#card">卡面圖鑑</a>
+        <a href="#speak">留言</a>
+        <a href="https://loveanddeepspace.infoldgames.com/zh-TW/home" target="_blank">官方網站</a>
+    </div>
+</div>
+
+<div class="hero">
+</div>
+
+<div class="character" id="story">
+
+  <div class="card">
+      <img src="https://i.pinimg.com/1200x/db/05/14/db0514d839a3958f08259aa63f2ba1af.jpg">
+  </div>
+
+  <div class="text-area">
+
+      <div class="quote">
+          引力的起點是你，終點也是你
+      </div>
+
+      <div class="info">
+          <p>姓名:夏以晝</p>
+          <p>生日：6 / 13</p>
+          <p>身高：188 cm</p>
+          <p>年齡：25</p>
+          <p>職業：遠空艦隊執艦官 / DAA戰鬥機飛行員</p>
+          <p>EVOL：引力控制</p>
+          <p>
+          性格：他擁有近乎矛盾的兩面。人前，是陽光溫柔、可靠體貼的青梅竹馬哥哥；
+          人後，卻冷靜理智、擅長偽裝，內心隱藏著偏執與強烈的獨占欲，道德感亦顯得淡薄。
+          作為遠空艦隊的執艦官，他同時具備野心家般的魄力與掌控全局的能力，
+          行事果斷凌厲，從不在關鍵時刻手軟。
+          </p>
+      </div>
+
+  </div>
+
+</div>
+
+<div class="text-area">
+
+</div>
+  <section id="card">
+    <h2 class="section-title">卡面圖鑑</h2>
+    <table class="card-table">
+    <tr>
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/c/cf/tvdjpkyazljcvgork035kahuj0nhi9w.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E8%BF%9C%E7%A9%BA%E8%BF%B7%E8%88%AA.png">
+        <p>遠空迷航</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/d/d8/jyx3jj49tta8eycjmxcw7j7tgmhwu6t.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E8%BF%9C%E7%A9%BA%E6%A3%A0%E9%9B%A8.png">
+        <p>遠空棠雨</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/4/4c/gqgm6aimkwziqn3bdtvxpbzldwujfz7.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E5%AF%82%E8%B7%AF%E4%B8%8D%E5%BD%92.png">
+        <p>寂路不歸</p>
+      </td>
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/e/e1/7piacni6x7x78f859vu9a2llxwkkwgj.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E5%AF%82%E8%B7%AF%E5%90%8C%E8%B5%B4.png">
+        <p>寂路同赴</p>
+      </td>
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/0/01/6xccs3h7cxr15ilqo1kg1pxp4ju71l3.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E8%A7%A6%E7%97%9B%E8%AE%AF%E5%8F%B7.png"> 
+        <p>觸痛訊號</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/c/c8/pmlpmsmy4mh7qbg6tll3nzjwvw35tyw.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%97%A0%E5%B0%BD%E5%A4%8F.png">
+        <p>無盡夏</p>
+      </td>
+      </tr>
+
+    <tr>
+      
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/8/81/6fb5ibxpwrq00qy36wikssid7utjef3.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%9A%97%E6%BD%AE%E8%BE%B9%E7%BC%98.png">
+        <p>暗潮邊緣</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/d/d5/s8agau4egg33w62rcvwhnyyna9n94ki.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E9%99%90%E5%AE%9A%E4%BD%99%E5%91%B3.png">
+        <p>限定餘味</p>
+      </td>
+
+       <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/e/ee/av1gs2fxn6iohy6am6n118wivrcbm0m.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E9%99%84%E9%AA%A8%E4%B9%8B%E7%97%95.png">
+        <p>附骨之痕</p>
+      </td>
+
+       <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/6/65/pvea1olklkmpw82qc94caqr2ye7igmi.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%B5%AE%E8%8A%B1%E4%BB%A5%E8%BD%BD.png">
+        <p>浮花以載</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/4/46/b9vzu0rf21b02zd6aby70kaamxibd2o.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%97%A0%E5%8F%AF%E9%80%83%E9%80%B8%E5%A4%9C.png">
+        <p>無可逃夜</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/2/21/rhb0qsgns5m4mvu04ivw7kzink7dbdq.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%B0%B8%E6%97%A0%E5%B2%9B.png">
+        <p>永無島</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/0/04/kzs8kmcly7ntuvxrkthqoruqi4r62xn.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%A7%90%E5%BA%8F.png">
+        <p>槐序</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/1/1d/a7lk2twpcgicpj98cuhxjncdhie7abm.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%BE%84%E9%A3%8E%E6%8E%A0%E6%B5%B7.png">
+        <p>澄風掠海</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/0/0c/sdgku34mh3yyi6i0nog7523y07rgs5m.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E7%81%BC%E9%A2%91%E8%BF%87%E8%BD%BD.png">
+        <p>灼頻過載</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/f/f2/gzv1or407orfgqvr8i5go8z0u98xxor.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%85%B5%E6%87%92%E5%85%B1%E8%B0%8B.png">
+        <p>慵懶共謀</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/a/a1/8v7yfzbjp3laqayke4u1rzowjt12rj6.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%B5%B4%E5%86%95%E6%AD%8C.png">
+        <p>浴冕歌</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/9/9c/rllvnw6wi1aqpn532gkkronil1rb9a3.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%99%B4%E6%98%BC%E5%BD%93%E5%BD%92.png">
+        <p>晴晝當歸</p>
+      </td>
+    </tr>
+    
+    <tr>
+       <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/b/b3/jkxtvyd68b0xbhszy042u3ixpsjiq2x.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E7%A6%BB%E9%80%94%E5%AF%86%E8%A7%A6.png">
+        <p>離途密觸</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/6/68/clrkh06d8xkao786w1t3unc1cwfpspb.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E7%A6%BB%E9%80%94%E5%B9%BB%E4%B9%90.png">
+        <p>離途幻樂</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/a/a6/7ocitywu789pbcph0iam9ccumo23lo9.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E5%A4%A9%E9%99%85%E7%BA%BF.png">
+        <p>天際線</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/a/a2/8u739iylvg9fsc5qs4xgz5mis2uil9r.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E5%A5%94%E5%A4%8F%E4%B8%80%E5%88%BB.png">
+        <p>奔夏一刻</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/7/72/mwekcrqrja6pphat6lwplda32vhxxoj.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E5%AF%A5%E8%90%BD%E5%81%87%E8%B1%A1.png">
+        <p>寥落假象</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/a/af/ia0lh3ql2xbfw381etgjkyfq6f0r2l4.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%BD%AE%E6%B9%BF%E7%9B%9B%E9%87%8E.png">
+        <p>潮濕盛野</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/a/ab/if929pmovuqbj5zy3v2r47xnqm7vhzd.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E9%80%82%E9%85%8D%E6%B5%81%E8%A8%80.png">
+        <p>適配流言</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/1/1a/hlj4b2hz6bl8sm6ubjoiuanfmtcczsw.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E9%95%BF%E6%98%BC%E5%A6%82%E6%98%A8.png">
+        <p>長晝如昨</p>
+      </td>
+
+       <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/e/e1/nr1s5otdq9pv8eutalsuusvq2cba864.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E9%95%BF%E6%98%BC%E9%A1%B7%E5%88%BB.png">
+        <p>長晝勝利</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/4/4c/5bp9dq0rmsbr0fzv2z14ir9gxxvber4.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E9%A2%84%E6%94%AF%E7%BA%A6%E5%AE%9A.png">
+        <p>預支約定</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/5/52/oj3mc93s5ro05rx3m8fny002ztkfpef.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%88%8F%E4%B8%AD%E5%B1%80%E5%A4%96.png">
+        <p>戲中局外</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/c/c6/nnkeaacengvyx2vv1wkkk71yqsc4oik.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E5%9B%9E%E5%A4%8F.png">
+        <p>回夏</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/2/29/4a52f3qzd3w6iqpbliw7y54m9egycqu.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E7%84%9A%E7%BA%BF.png">
+        <p>焚線</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/c/c3/dukt32tgpodjh4fnpidp5gtibhvmiqf.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E7%BB%95%E9%87%91%E6%9E%9D.png">
+        <p>繞金枝</p>
+      </td>
+
+      <td>
+        <img src="https://i.pinimg.com/736x/55/b5/1e/55b51e7a3aa6b4fc363c2ea49e2e8b00.jpg">
+        <p>牽夜灼灼</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/4/43/aoyqfd4o60ooauiedn8bmxcvb6j6m0p.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E9%81%A5%E6%83%B3.png">
+        <p>遙想</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/3/32/6th6uvvqh0rhgmaa0b5yyfr3ijhnbbw.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E4%BB%96%E5%BF%83%E5%BC%95%E5%8A%9B.png">
+        <p>他心引力</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/a/aa/i8yb9h5pmt4v4scaqm2a03vjh3b5z8e.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E5%AD%97%E5%8F%A5%E6%B2%89%E6%B5%B8.png">
+        <p>字句沉浸</p>
+      </td>
+    </tr>
+
+    <tr>
+       <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/b/bf/sulnucag6yggf6ymo4pmpighmktdl8j.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E6%BB%A1%E5%88%86%E8%8B%B9%E6%9E%9C.png">
+        <p>滿分蘋果</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/c/cc/hm9voq89zrn6aved3pht835x7lz9xrn.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E8%83%BD%E9%87%8F%E6%BB%A1%E6%A0%BC.png">
+        <p>能量滿格</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/f/f8/ixjern6badmrp63ualwt1v9jzta652u.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E4%BC%9A%E5%BF%83%E4%B8%80%E5%87%BB.png">
+        <p>會心一擊</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/a/a6/3fzbxwixz1xqb828p2j6ck0g7six8zz.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E4%BF%9D%E6%8C%81%E8%81%94%E7%BB%9C.png">
+        <p>保持聯絡</p>
+      </td>
+
+      <td>
+        <img src="https://patchwiki.biligame.com/images/lysk/thumb/d/d7/1n7co2kk6r3u5rjagjfi4fybmldykx3.png/900px-%E6%80%9D%E5%BF%B5%E9%95%BF%E5%9B%BE-%E7%BB%88%E7%BB%93.png">
+        <p>終結</p>
+      </td>
+    </tr>
+  </table>
+   <h2 id="speak">留言</h2>
+
+<form>
+  <label>你的名字：</label>
+    <input type="text" name="username" placeholder="請輸入名字">
+      <br><br>
+
+  <label>想說的話：</label><br>
+    <textarea rows="4" cols="30" placeholder="寫下你想說的話"></textarea>
+      <br><br>
+
+  <input type="submit" value="送出">
+
+</form>
+
+</section>
+</body>
+</html>
